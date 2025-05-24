@@ -1,0 +1,19 @@
++-----------------------------------------------+
+| Mordheim Simulator                            | <------ Header (can contain a settings wheel to set nr of MC iterations)
++-----------------------------------------------+
+    Attacker win: x%                        Draw: x%             Defender win: x%   
+                                            [<->] <------ button: swap attacker defender and keep entered stats
+Attacker Stats:                             VS            Defender Stats: 
+[slider/input for WS] [BS] [S] ...                        [slider/input for WS] [BS] [T] ...
+
+                                   [ Run Simulation ]                              
+                                     
+
++----------------------+       +------------------+          +----------------------+                                    
+| Attacker skills      |       |   All Skills     |          | Defender skills      |     
+|                      |       | [search box...]  |          |  [Shield Bash]       |   
+|  [Shield Bash]       |       | [Shield Bash]    |          |                      |
++----------------------+       +------------------+          +----------------------+                   
+           
+
+                           

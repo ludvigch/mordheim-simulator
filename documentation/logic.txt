@@ -1,0 +1,23 @@
+From gui:
+    stats
+
+Simulate battle:
+    First round: // resolve first round separately since we can handle all skills/stats etc. for this and speed up sim if either dies
+        Who Charged? (Assume attacker always)
+        First round skills? (ex. sword master reroll miss when charging)
+        First round stats? (ex. flail +2 str first round)
+    round = 1 // might not need
+    While(!attacker.dead & !defender.dead)
+
+        case initiativeDiff: (initiativeDiff=A.i-D.i)
+            >0 -> resolveattacks(attacker, defender)
+            <0 -> resolveattacks(defender, attacker)
+            else -> resolveattacks(attacker, defender) & resolveattacks(defender, attacker)
+        round++
+    if (both dead)
+        return Draw
+    elif (defender dead)
+        return AttackerWin
+    else
+        return DefWin
+
