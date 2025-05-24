@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { rollD6 } from './lib/util.jsx';
 
 export default function App() {
   const [attacker, setAttacker] = useState(4);
